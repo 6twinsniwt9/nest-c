@@ -1,3 +1,5 @@
+
+
 #include "vta/runtime.h"
 #include "VTABundle.h"
 #include <time.h>
@@ -262,7 +264,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage1_conv0_fwd__2_res);
 
   //Run elementadd : resnetv10_stage1__plus0__1
-  //elemadd(resnetv10_pool0_fwd__1_res, 1.0/32.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, 200704 );
+  elemadd(resnetv10_pool0_fwd__1_res, 1.0/32.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, 200704 );
 
   //Run deallocactivation : dealloc_resnetv10_pool0_fwd__1_res
   free(resnetv10_pool0_fwd__1_res);
@@ -298,7 +300,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage1_conv2_fwd__2_res);
 
   //Run elementadd : resnetv10_stage1__plus1__1
-  //elemadd(resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage1_conv3_fwd__2_res, 1.0/16.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, 200704 );
+  elemadd(resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage1_conv3_fwd__2_res, 1.0/16.000000, 0, resnetv10_stage1__plus1__1_res, 1.0/16.000000, 0, 200704 );
 
   //Run deallocactivation : dealloc_resnetv10_stage1_conv3_fwd__2_res
   free(resnetv10_stage1_conv3_fwd__2_res);
@@ -349,7 +351,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage2_conv0_fwd__2_res);
 
   //Run elementadd : resnetv10_stage2__plus0__1
-  //elemadd(resnetv10_stage2_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, 100352 );
+  elemadd(resnetv10_stage2_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, 100352 );
 
   //Run deallocactivation : dealloc_resnetv10_stage2_conv2_fwd__2_res
   free(resnetv10_stage2_conv2_fwd__2_res);
@@ -385,7 +387,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage2_conv3_fwd__2_res);
 
   //Run elementadd : resnetv10_stage2__plus1__1
-  //elemadd(resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage2_conv4_fwd__2_res, 1.0/32.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, 100352 );
+  elemadd(resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, resnetv10_stage2_conv4_fwd__2_res, 1.0/32.000000, 0, resnetv10_stage2__plus1__1_res, 1.0/16.000000, 0, 100352 );
 
   //Run deallocactivation : dealloc_resnetv10_stage2_conv4_fwd__2_res
   free(resnetv10_stage2_conv4_fwd__2_res);
@@ -436,7 +438,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage3_conv0_fwd__2_res);
 
   //Run elementadd : resnetv10_stage3__plus0__1
-  //elemadd(resnetv10_stage3_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, 50176 );
+  elemadd(resnetv10_stage3_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, 50176 );
 
   //Run deallocactivation : dealloc_resnetv10_stage3_conv2_fwd__2_res
   free(resnetv10_stage3_conv2_fwd__2_res);
@@ -472,7 +474,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage3_conv3_fwd__2_res);
 
   //Run elementadd : resnetv10_stage3__plus1__1
-  //elemadd(resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, resnetv10_stage3_conv4_fwd__2_res, 1.0/32.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, 50176 );
+  elemadd(resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, resnetv10_stage3_conv4_fwd__2_res, 1.0/32.000000, 0, resnetv10_stage3__plus1__1_res, 1.0/32.000000, 0, 50176 );
 
   //Run deallocactivation : dealloc_resnetv10_stage3_conv4_fwd__2_res
   free(resnetv10_stage3_conv4_fwd__2_res);
@@ -523,7 +525,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   free(resnetv10_stage4_conv0_fwd__2_res);
 
   //Run elementadd : resnetv10_stage4__plus0__1
-  //elemadd(resnetv10_stage4_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, 25088 );
+  elemadd(resnetv10_stage4_conv2_fwd__2_res, 1.0/64.000000, 0, resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, 25088 );
 
   //Run deallocactivation : dealloc_resnetv10_stage4_conv2_fwd__2_res
   free(resnetv10_stage4_conv2_fwd__2_res);
@@ -562,7 +564,7 @@ int mxnet_exported_resnet18(uint8_t *constantWeight, uint8_t *mutableWeight, uin
   int8_t *resnetv10_stage4__plus1__1_res = (int8_t *)malloc(25088);
 
   //Run elementadd : resnetv10_stage4__plus1__1
-  //elemadd(resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, resnetv10_stage4_conv4_fwd__2_res, 1.0/8.000000, 0, resnetv10_stage4__plus1__1_res, 1.0/4.000000, 0, 25088 );
+  elemadd(resnetv10_stage4__plus0__1_res, 1.0/16.000000, 0, resnetv10_stage4_conv4_fwd__2_res, 1.0/8.000000, 0, resnetv10_stage4__plus1__1_res, 1.0/4.000000, 0, 25088 );
 
   //Run deallocactivation : dealloc_resnetv10_stage4__plus0__1_res
   free(resnetv10_stage4__plus0__1_res);
